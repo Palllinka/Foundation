@@ -1,0 +1,525 @@
+html,
+body {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column; /* Главная ось располагается вертикально и направлена сверху вниз.*/
+}
+body {
+  font-family: "Work Sans", sans-serif;
+}
+.started-button {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 13px;
+  color: #ffffff;
+  background: #3040c4;
+  border-radius: 2px;
+  border: 0;
+  padding: 18px 18px;
+}
+.started-button:hover,
+.started-button:focus,
+.started-button:active {
+  background: #475bff;
+  font-weight: normal;
+}
+.learn-more-button {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 13px;
+  color: #3040c4;
+  background: #ffffff;
+  border-radius: 2px;
+  border: 0;
+  padding: 18px 18px;
+  margin-left: 10px;
+}
+.learn-more-button:hover,
+.learn-more-button:focus,
+.learn-more-button:active {
+  font-weight: normal;
+}
+/* Header styles start */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 71.25em;
+  margin: 0 auto;
+}
+.header {
+  background: #f3c6bd;
+  padding-top: 2.5em;
+  background-image: url(img/menu-icon.png);
+}
+.logo {
+  display: flex;
+  text-decoration: none;
+}
+.logo__tittle {
+  margin-left: 0.9375em;
+  font-family: Work Sans;
+  font-style: normal;
+}
+.logo-tittle1 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  color: #2b292d;
+}
+.logo-tittle2 {
+  font-size: 18px;
+  line-height: 25px;
+  color: rgba(43, 41, 45, 0.6);
+}
+.nav {
+  display: flex;
+  position: relative;
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+.nav-item {
+  margin-right: 4.6875em;
+}
+.nav-item:hover,
+.nav-item:focus,
+.nav-item:active {
+  font-weight: bold;
+  position: relative;
+}
+.nav-item:not(:last-child) {
+  margin-right: 4.6875em;
+}
+.nav-link {
+  text-decoration: none;
+  color: #2b292d;
+}
+.sub-nav-list {
+  background: #ffffff;
+  position: absolute;
+  padding: 30px 30px 0 30px;
+  right: 0;
+  list-style: none;
+  display: none;
+  border-radius: 8px;
+  box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15),
+    0px 29px 45px rgba(0, 0, 0, 0.08), 0px 11px 55px rgba(0, 0, 0, 0.07);
+  margin-top: 25px;
+  z-index: 999999;
+}
+.sub-nav-list__triangle {
+  position: absolute;
+  right: 20px;
+  top: -20px;
+
+  width: 0;
+  height: 0;
+
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid white;
+}
+.sub-nav-item {
+  position: relative;
+  font-family: Work Sans;
+  font-style: normal;
+  width: 260px;
+  height: 90px;
+  padding-bottom: 30px;
+}
+.sub-nav-link {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  color: #2b292d;
+}
+.nav-item-sub:hover .sub-nav-list {
+  position: absolute;
+  display: flex;
+}
+.sub-nav-link:hover,
+.sub-nav-link:focus,
+.sub-nav-link:active {
+  color: #009b4d;
+}
+
+.sub-nav-desc {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  color: #2b292d;
+}
+
+/* Header styles end */
+
+/* Main section styles start */
+.main-section {
+  background: #f3c6bd;
+  padding: 35px 25px 75px 150px;
+  height: 500px;
+}
+.main-section__container {
+  position: absolute;
+  z-index: 9999;
+}
+.main-section__heading {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 78px;
+  letter-spacing: -0.5px;
+  color: #2b292d;
+  width: 755px;
+}
+.main-section__text {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  color: #2b292d;
+  width: 455px;
+  padding-bottom: 60px;
+}
+.main-section__image {
+  position: absolute;
+  right: 0;
+  bottom: 0%;
+  transform: translate(0%, -5%);
+}
+
+/* Main section styles end */
+
+/* Question section styles start */
+.question-section {
+  background: #f4f5f7;
+}
+.question {
+  display: flex;
+  width: 71.25em;
+  margin: 0 auto;
+  height: 225px;
+  background: #f4f5f7;
+  justify-content: space-between;
+}
+.question-answer {
+  padding-top: 35px;
+  width: 555px;
+  font-family: Work Sans;
+  font-style: normal;
+}
+.question-1 {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 32px;
+  color: #2b292d;
+}
+.question-2 {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 32px;
+  color: #2b292d;
+}
+.answer-1 {
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 32px;
+  color: #2b292d;
+}
+.answer-2 {
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 32px;
+  color: #2b292d;
+}
+/* Question section styles end */
+
+/* Company section styles starter */
+
+.company-list {
+  display: flex;
+  list-style: none;
+  width: 71.25em;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.company-item {
+  padding-top: 30px;
+  padding-bottom: 90px;
+}
+/* Company section styles end */
+
+/* Features section styles start */
+.features-section {
+  display: flex;
+}
+.features-min-pic {
+  padding-top: 260px;
+}
+.features-section__info {
+  width: 465px;
+  padding-left: 40px;
+}
+.features {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 34px;
+  color: #009b4d;
+}
+.features-section__tittle {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -0.5px;
+  color: #2b292d;
+}
+.features-section__tittle-info {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  color: #2b292d;
+}
+.features-section__list {
+  list-style: none;
+}
+.features-section__item {
+  border-bottom: 1px solid;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.features-section__item:hover {
+  border-bottom: 3px solid #3142c6;
+}
+
+.features-section__item:hover .features-section__link {
+  color: #3142c6;
+}
+
+.features-section__item:hover .link-text {
+  display: block;
+}
+
+.features-section__link {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  color: #2b292d;
+  text-decoration: none;
+}
+.features-section__link:hover,
+.features-section__link:active,
+.features-section__link:focus {
+  color: #3142c6;
+}
+.link-pic {
+  padding-right: 15px;
+}
+.link-text {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  display: none;
+}
+.features-section__pic {
+  padding-left: 125px;
+}
+/* Features section styles end */
+/* Team Inbox section style start */
+.team-inbox-section {
+  margin-top: 100px;
+  display: flex;
+  background: #fcf0e3;
+  height: 790px;
+}
+.team-inbox-section__pic {
+  padding: 140px 250px 0 190px;
+  text-align: center;
+}
+.team-inbox-section__text {
+  padding-top: 50px;
+}
+.team-inbox-section__info {
+  padding-top: 115px;
+  width: 515px;
+}
+.team-info {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 34px;
+  color: #f1592b;
+}
+.team-info__tittle {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -0.5px;
+  color: #2b292d;
+}
+.team-info__tittle-info {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  color: #2b292d;
+}
+.comment {
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.05) 0%,
+      rgba(255, 255, 255, 1e-5) 100%
+    ),
+    #ffffff;
+  background-blend-mode: overlay, normal;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+    inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-bottom: 5px solid #0185d0;
+}
+.quote {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2b292d;
+}
+.person {
+  display: flex;
+}
+.person__pic {
+  margin-top: 25px;
+}
+.person__info {
+  padding-left: 15px;
+  height: 45px;
+}
+.person__name {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2b292d;
+}
+.person__status {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(43, 41, 45, 0.6);
+  margin-top: -10px;
+}
+
+/* Team Inbox section style end */
+
+/* Communicate Better section styles start */
+.communion-better-section {
+}
+.communion-better-section__div {
+  display: flex;
+  padding: 120px 0 70px 130px;
+}
+.communion-better-section__info {
+  width: 460px;
+}
+.communion-info {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 34px;
+  color: #0189d1;
+  padding-bottom: 25px;
+}
+.communion-info__tittle {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -0.5px;
+  color: #2b292d;
+  padding-bottom: 30px;
+}
+.communion-info__tittle-info {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  color: #2b292d;
+  padding-bottom: 40px;
+}
+.communion-better-section__pic {
+  padding: 110px 0 0 300px;
+}
+.communion-better-section-pic__text {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: rgba(43, 41, 45, 0.6);
+  padding-top: 50px;
+}
+.communion-better {
+  padding: 0 130px 110px 130px;
+}
+.communioun-better__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.communioun-better__item {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.communioun-better__text {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  color: #2b292d;
+}
+.communioun-better__link {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-decoration-line: underline;
+  color: #3142c6;
+}
+/* Communicate Better section styles end */
